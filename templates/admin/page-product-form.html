@@ -1,0 +1,34 @@
+        <h1 class="page-title">{{form_heading}}</h1>
+
+        {{error_blocks}}
+
+        <form method="post" class="stack-form max-form card card-pad">
+            <label>
+                <span class="label-text"><i class="fa-solid fa-signature"></i> Name</span>
+                <input type="text" name="name" required value="{{name}}">
+            </label>
+            <label>
+                <span class="label-text"><i class="fa-solid fa-align-left"></i> Description</span>
+                <textarea name="description" rows="4">{{description}}</textarea>
+            </label>
+            <label>
+                <span class="label-text"><i class="fa-solid fa-dollar-sign"></i> Price</span>
+                <input type="text" name="price" inputmode="decimal" required value="{{price}}">
+            </label>
+            <label>
+                <span class="label-text"><i class="fa-solid fa-warehouse"></i> Stock</span>
+                <input type="number" name="stock" min="0" required value="{{stock}}">
+            </label>
+            <label>
+                <span class="label-text"><i class="fa-solid fa-image"></i> Image URL (optional)</span>
+                <input type="url" name="image_url" placeholder="https://..." value="{{image_url}}">
+            </label>
+            <label class="checkbox-row">
+                <input type="checkbox" name="active" value="1" {{active_checked}}>
+                <span><i class="fa-solid fa-eye"></i> Visible in store</span>
+            </label>
+            <div class="actions-row">
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+                <a href="index.php" class="btn btn-ghost"><i class="fa-solid fa-xmark"></i> Cancel</a>
+            </div>
+        </form>

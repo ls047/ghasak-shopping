@@ -1,0 +1,21 @@
+        <form method="post" class="cart-form card card-pad">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th><i class="fa-solid fa-cube"></i> Product</th>
+                        <th><i class="fa-solid fa-dollar-sign"></i> Price</th>
+                        <th><i class="fa-solid fa-hashtag"></i> Qty</th>
+                        <th><i class="fa-solid fa-calculator"></i> Line</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{cart_rows}}
+                </tbody>
+            </table>
+            <p class="cart-total"><i class="fa-solid fa-receipt"></i> <strong>Total:</strong> {{subtotal}}</p>
+            <div class="actions-row">
+                <button type="submit" name="update_cart" value="1" class="btn"><i class="fa-solid fa-rotate"></i> Update cart</button>
+                <button type="submit" name="clear_cart" value="1" class="btn btn-ghost"><i class="fa-solid fa-trash"></i> Clear</button>
+                <a class="btn btn-primary" href="checkout.php"><i class="fa-solid fa-credit-card"></i> Checkout</a>
+            </div>
+        </form>

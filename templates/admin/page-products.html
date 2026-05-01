@@ -1,0 +1,26 @@
+        <div class="page-head">
+            <h1 class="page-title"><i class="fa-solid fa-boxes-stacked"></i> Products</h1>
+            <p class="toolbar">
+                <a class="btn btn-primary" href="product-form.php"><i class="fa-solid fa-plus"></i> Add product</a>
+            </p>
+        </div>
+
+        <div class="table-wrap card card-pad">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Active</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{product_rows}}
+                </tbody>
+            </table>
+        </div>
+
+        {{empty_products}}

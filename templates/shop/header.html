@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page_title}} — Sunny Mart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="{{base_path}}/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="{{base_path}}/index.php">
+                <span class="logo-icon" aria-hidden="true"><i class="fa-solid fa-basket-shopping"></i></span>
+                <span>Sunny Mart</span>
+            </a>
+            <nav class="nav" aria-label="Main">
+                <a href="{{base_path}}/index.php"><i class="fa-solid fa-store"></i> Products</a>
+                <a href="{{base_path}}/cart.php" class="cart-link">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart
+                    <span class="badge" id="cart-badge">{{cart_count}}</span>
+                </a>
+                <a href="{{base_path}}/admin/login.php" class="nav-admin"><i class="fa-solid fa-lock"></i> Admin</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container main-content">

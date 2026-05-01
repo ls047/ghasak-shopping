@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page_title}}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="{{root_path}}/css/style.css">
+</head>
+<body class="admin-body login-screen">
+    <div class="login-card">
+        <p class="login-brand"><i class="fa-solid fa-lock"></i></p>
+        <h1>Admin sign in</h1>
+        {{error_block}}
+        <form method="post" class="stack-form">
+            <label>
+                <span class="label-text"><i class="fa-solid fa-user"></i> Username</span>
+                <input type="text" name="username" required autocomplete="username" autofocus>
+            </label>
+            <label>
+                <span class="label-text"><i class="fa-solid fa-key"></i> Password</span>
+                <input type="password" name="password" required autocomplete="current-password">
+            </label>
+            <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-right-to-bracket"></i> Sign in</button>
+        </form>
+        <p class="muted small"><a href="{{root_path}}/index.php"><i class="fa-solid fa-arrow-left"></i> Back to store</a></p>
+    </div>
+</body>
+</html>

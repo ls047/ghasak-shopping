@@ -1,0 +1,13 @@
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{price}}</td>
+                        <td>
+                            <input type="number"
+                                   name="qty[{{id}}]"
+                                   value="{{qty}}"
+                                   min="0"
+                                   max="{{max_stock}}"
+                                   class="qty-input">
+                        </td>
+                        <td>{{line_total}}</td>
+                    </tr>

@@ -1,0 +1,14 @@
+                    <tr>
+                        <td>{{id}}</td>
+                        <td><i class="fa-solid fa-tag text-icon"></i> {{name}}</td>
+                        <td>{{price}}</td>
+                        <td>{{stock}}</td>
+                        <td>{{active_label}}</td>
+                        <td class="row-actions">
+                            <a href="product-form.php?id={{id}}" class="btn btn-sm"><i class="fa-solid fa-pen"></i> Edit</a>
+                            <form method="post" action="product-delete.php" class="inline-form" onsubmit="return confirm('Delete this product?');">
+                                <input type="hidden" name="id" value="{{id}}">
+                                <button type="submit" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash"></i> Delete</button>
+                            </form>
+                        </td>
+                    </tr>

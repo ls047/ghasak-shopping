@@ -1,0 +1,19 @@
+        <div class="card card-pad checkout-single">
+            <h1 class="page-title"><i class="fa-solid fa-truck-fast"></i> Checkout</h1>
+            {{error_block}}
+            <p class="order-summary"><i class="fa-solid fa-money-bill-wave"></i> Total due: <strong>{{subtotal}}</strong></p>
+            <form method="post" class="stack-form">
+                <label>
+                    <span class="label-text"><i class="fa-solid fa-user"></i> Full name</span>
+                    <input type="text" name="customer_name" required value="{{customer_name}}">
+                </label>
+                <label>
+                    <span class="label-text"><i class="fa-solid fa-envelope"></i> Email</span>
+                    <input type="email" name="email" required value="{{email}}">
+                </label>
+                <div class="actions-row">
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-check"></i> Place order</button>
+                    <a href="cart.php" class="btn btn-ghost"><i class="fa-solid fa-arrow-left"></i> Back to cart</a>
+                </div>
+            </form>
+        </div>
